@@ -2,10 +2,10 @@ package tests;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import page.AdsListPage;
-import page.StatsPage;
+import pages.AdsListPage;
+import pages.StatsPage;
 
-public class StatisticTest extends BaseTest {
+public class StatsTest extends BaseTest {
 
     @Test(description = "TC-15. Сброс таймера обновления статистики при нажатии кнопки 'Обновить'")
     public void testRefreshTimerButton() {

@@ -1,7 +1,7 @@
 package tests;
 
 import org.testng.annotations.Test;
-import page.AdsListPage;
+import pages.AdsListPage;
 
 public class AdsListMobileTest extends MobileBaseTest {
 

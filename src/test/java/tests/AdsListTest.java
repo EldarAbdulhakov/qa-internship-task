@@ -3,7 +3,7 @@ package tests;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-import page.AdsListPage;
+import pages.AdsListPage;
 
 import java.util.Comparator;
 import java.util.List;
