@@ -200,15 +200,17 @@ public class AdsListTest extends BaseTest {
 
     @Test(description = "TC-12. Выбор категории 'Все' после выбора категории")
     public void testCategoryResetToAll() {
-        List<String> initialCategories = new AdsListPage(getDriver())
+        AdsListPage adsListPage = new AdsListPage(getDriver());
+
+        List<String> initialCategories = adsListPage
                 .getCardsCategories();
 
-        List<String> filteredCategories = new AdsListPage(getDriver())
+        List<String> filteredCategories = adsListPage
                 .selectCategory("Электроника")
                 .waitForLoader()
                 .getCardsCategories();
 
-        List<String> resetCategories = new AdsListPage(getDriver())
+        List<String> resetCategories = adsListPage
                 .selectCategory("Все категории")
                 .waitForLoader()
                 .getCardsCategories();
